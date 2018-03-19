@@ -34,7 +34,7 @@ function displayPics(){
       viewed.push(rando);
     }
   }
-  console.log(rando);
+
   // Done: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
   //variables declared with let are not accessible if they are declared in their enclosing function block.
   console.log(viewed);
@@ -73,7 +73,7 @@ function handleClick(event) {
 function showList() {
   for(let i = 0; i < allProducts.length; i++) {
     let liEl = document.createElement('li');
-    liEl.textContent = `${allProducts[i].name} has + ${allProducts[i].votes} votes in ${allProducts[i].views}  views`;
+    liEl.textContent = `${allProducts[i].name} has  ${allProducts[i].votes} votes in ${allProducts[i].views}  views`;
     list.appendChild(liEl);
   }
 }
